@@ -1,0 +1,12 @@
+.HamburgerVortex {
+    float: left;
+}
+
+.header-list-items-horizontal {
+    display: inline;
+}
+
+.header-item-horizontal {
+    display: inline-block;
+    width: 100px;
+}
