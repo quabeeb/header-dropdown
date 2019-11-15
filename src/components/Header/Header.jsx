@@ -19,7 +19,9 @@ export default function Header() {
 
     return(
         <div>
-            <HamburgerVortex isActive={buttonState} toggleButton={toggleButton}/>
+            <span className='toggled-visibility'>
+                <HamburgerVortex isActive={buttonState} toggleButton={toggleButton}/>
+            </span>
             <ul className='header-list-items-horizontal'>
                 {headerListItems}
 			</ul>
