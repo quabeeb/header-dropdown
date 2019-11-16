@@ -1,22 +1,42 @@
-.toggled-visibility {
-    visibility: hidden;
-}
-
 .header-list-items-horizontal {
-    display: inline;
+	display: inline-block;
 }
 
 .header-item-horizontal {
-    display: inline-block;
-    width: 100px;
+	display: inline-block;
+	text-align: center;
+	list-style-type: none;
+
+	width: 100px;
+	height: 25px;
 }
 
-@media only screen and (max-width: 700px) {
-    .toggled-visibility {
-        visibility: visible;
-    }
+.header-list-items-vertical {
+	position: absolute;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding-left: 0;
 
-    .header-list-items-horizontal {
-        visibility: hidden;
+	z-index: 1;
+
+	animation: fade-in .75s;
+}
+
+.header-item-vertical {
+	display: inline-block;
+	color: white;
+	background-color: black;
+    width: 100vw;
+}
+
+@keyframes fade-in {
+    0% {
+		top:0px;
+        opacity: 0;
+    }
+    100% {
+		top:57px;
+        opacity: 1;
     }
 }

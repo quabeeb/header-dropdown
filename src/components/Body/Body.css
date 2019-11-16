@@ -1,3 +1,7 @@
 .big-bodied-body {
+	position: center absolute;
+}
+
+.big-bodied-body div {
     text-align: center;
 }
